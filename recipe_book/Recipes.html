@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-text-container">
+            <h1>The Secret Ingredient</h1>
+            <p>A little mystery in your cooking</p>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-button">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="addRecipe">
+            <h2>
+                Add Delicious Recipes...
+            </h2>
+            <form id="recipeForm">
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" required>
+
+                <label for="recipeImage">Image:</label>
+                <input type="file" id="recipeImage" accept="image/*" required>
+
+                <label for="recipeIngredients">Ingredients:</label>
+                <textarea id="recipeIngredients" required></textarea>
+
+                <label for="recipeSteps">Preparation Steps:</label>
+                <textarea id="recipeSteps" required></textarea>
+
+                <button type="submit" class="Recipebutton">Add Recipe</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="viewRecipes">
+            <div class="search-recipes">
+                <input type="text" id="searchBar" placeholder="Search by name...">
+            </div>
+
+            <h2>Recipes</h2>
+            <div id="recipeList" class="recipe-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Delicious Recipe Book</p>
+    </footer>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modalDetails">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
