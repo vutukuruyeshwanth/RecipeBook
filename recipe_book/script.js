@@ -37,6 +37,9 @@ function deleteRecipe(index) {
     {
         recipes.splice(index,1);//remove 1 item at specific index
         saveRecipes(); // save the updated list to local storage 
+        const searchTerm = searchBar.value.toLowerCase();
+        const filteredRecipes = recipes.filter(recipe => recipe.name.toLowerCase().includes(searchTerm)) || 
+        recipe.ingredient.some(ingredient => ingredient.toLowerCase().includes(searchTerm));
         displayRecipes(recipes); // Re-render the list to update the UI 
         alert('Recipe deleted successfully!');
     }
@@ -174,5 +177,6 @@ function init() {
     loadRecipes();
     displayRecipes(recipes);
 }
+
 
 init();
