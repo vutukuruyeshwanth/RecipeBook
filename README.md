@@ -5,6 +5,8 @@ The Secret Ingredient
 Project Overview:
 "The Secret Ingredient" is a responsive, web-based recipe book designed to provide users with a simple and intuitive platform to manage their favorite recipes. This project was built to demonstrate proficiency in core web technologies and showcase a complete, functional front-end application with data persistence.
 
+Here is the live link: https://vutukuruyeshwanth.github.io/RecipeBook/recipe_book/
+
 Features:
 1. User-Friendly Interface: The application is built with a clean, modern design that is easy to navigate on both desktop and mobile devices.
 2.Dynamic Recipe Management: Users can easily add new recipes, including a title, a list of ingredients, and preparation steps.
