@@ -78,3 +78,6 @@ For any questions or feedback regarding this project:
 ├── recipes.html
 ├── style.css
 └── README.md
+
+## Project Status
+This website was developed as part of an internship project. It serves as a portfolio piece showcasing skills in Full Stack web development.
